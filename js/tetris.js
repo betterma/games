@@ -25,7 +25,7 @@ var games = {
             games.pg = document.getElementById("playground");
             games.shape = new O();
             games.paintShape();
-            this.timer = setInterval(this.move.bind(this), 200);
+            this.timer = setInterval(this.move.bind(this), 500);
 
             document.onkeydown = function (ev) {
                 switch (ev.keyCode) {
@@ -42,7 +42,7 @@ var games = {
             //     clearInterval(this.timer);
             // }.bind(this);
             // document.ondblclick = function(){
-            //     this.timer = setInterval(this.move.bind(this), 200);
+            //     this.timer = setInterval(this.move.bind(this), 500);
             // }.bind(this);
 
             document.getElementById("left").onclick = function (ev) {
@@ -59,7 +59,7 @@ var games = {
                     clearInterval(this.timer);
                     this.timer=null;
                 }else {
-                    this.timer=setInterval(this.move.bind(this), 200);
+                    this.timer=setInterval(this.move.bind(this), 500);
                     e.target.src="img/play.png";
                 }
                 // if(e.target.src=="img/play.png"){
