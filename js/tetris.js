@@ -1,3 +1,4 @@
+alert("这是一款练习用JavaScript开发的俄罗斯方块游戏，待解决的问题有:图形变换应该考虑到边界和其他图形的影响。——马鹏程")
 document.ondblclick = function(ev){
 	ev.preventDefault();
 }
